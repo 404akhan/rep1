@@ -243,12 +243,12 @@ train_iterator, valid_iterator, test_non_target_iterator, test_target_iterator =
 
 INPUT_DIM = len(TEXT.vocab)
 EMBEDDING_DIM = 200
-HIDDEN_DIM = 300 # !!! change -> 256
+HIDDEN_DIM = 200 # !!! change -> 256
 OUTPUT_DIM = 3 # !!! change -> 3
 N_LAYERS = 1 # !!! change -> 2
 BIDIRECTIONAL = True
 DROPOUT = 0.5
-N_FILTERS = 200
+N_FILTERS = 150
 FILTER_SIZES = [3,4,5]
 
 model = RNN(INPUT_DIM, EMBEDDING_DIM, HIDDEN_DIM, OUTPUT_DIM, N_LAYERS, BIDIRECTIONAL, DROPOUT, TEXT.vocab.stoi['<pad>'],
